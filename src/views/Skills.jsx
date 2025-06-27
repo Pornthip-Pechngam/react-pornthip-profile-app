@@ -15,6 +15,7 @@ function Skills() {
 
   return (
     <Box
+      id="skills"
       sx={{
         backgroundColor: "#0D0D0D",
         color: "white",
@@ -22,21 +23,20 @@ function Skills() {
         padding: "80px 10%",
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
-        alignItems: { xs: "flex-start", md: "center" },
+        alignItems: "flex-start",
         justifyContent: "space-between",
         gap: 4,
       }}
     >
       {/* Left: Heading */}
-      <Typography
-        variant="h3"
-        sx={{ fontWeight: "bold", flex: 1, whiteSpace: "nowrap" }}
-      >
-        MY CAPABILITIES
-      </Typography>
+      <Box sx={{ minWidth: "200px", pt: 1.5 }}>
+        <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+          MY CAPABILITIES
+        </Typography>
+      </Box>
 
       {/* Right: Description & Tags */}
-      <Box sx={{ flex: 2 }}>
+      <Box sx={{ flex: 1 }}>
         <Typography
           variant="body1"
           sx={{ mb: 3, fontSize: "1.1rem", lineHeight: 1.7 }}
@@ -54,7 +54,6 @@ function Skills() {
               sx={{
                 color: "white",
                 borderColor: "white",
-                borderRadius: "20px",
                 fontWeight: "bold",
                 px: 2,
                 fontSize: "1rem",

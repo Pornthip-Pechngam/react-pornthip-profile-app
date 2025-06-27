@@ -3,7 +3,22 @@ import { Box, Typography } from "@mui/material";
 
 function Experience() {
   return (
-    <Box sx={{ bgcolor: "#000", color: "#fff", minHeight: "100vh", px: 5, py: 6 }}>
+    <Box
+      id="work"
+      sx={{
+        backgroundColor: "#0D0D0D",
+        color: "white",
+        minHeight: "60vh",
+        padding: "80px 10%",
+        display: "flex",
+        flexDirection: { xs: "column", md: "row" },
+        alignItems: { xs: "flex-start", md: "center" },
+        justifyContent: "space-between",
+        gap: 4,
+        boxShadow: "0px 0px 30px rgba(0, 173, 181, 0.2)",
+        borderRadius: "20px",
+      }}
+    >
       {/* กล่องหลัก: ซ้าย = หัวข้อ, ขวา = รายละเอียด */}
       <Box
         sx={{
@@ -35,10 +50,12 @@ function Experience() {
                 Freelance Developer
               </Typography>
               <Typography variant="body1" sx={{ color: "#ccc", mb: 1 }}>
-                พัฒนาและปรับปรุงส่วนติดต่อผู้ใช้สำหรับเว็บแอปพลิเคชันโดยใช้ React.js
+                พัฒนาและปรับปรุงส่วนติดต่อผู้ใช้สำหรับเว็บแอปพลิเคชันโดยใช้
+                React.js
               </Typography>
               <Typography variant="body1" sx={{ color: "#ccc", mb: 1 }}>
-                ทำงานร่วมกับทีมออกแบบ UX/UI เพื่อสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจ
+                ทำงานร่วมกับทีมออกแบบ UX/UI
+                เพื่อสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจ
               </Typography>
               <Typography variant="body1" sx={{ color: "#ccc", mb: 1 }}>
                 ปรับปรุงความเร็วในการโหลดเว็บไซต์ด้วยเทคนิคการเพิ่มประสิทธิภาพต่างๆ
@@ -76,7 +93,8 @@ function Experience() {
                 พัฒนาเว็บไซต์ลูกค้าโดยใช้ HTML, CSS และ JavaScript
               </Typography>
               <Typography variant="body1" sx={{ color: "#ccc", mb: 1 }}>
-                ช่วยปรับปรุงการเข้าถึง (Accessibility) ของเว็บไซต์ให้สอดคล้องกับมาตรฐาน WCAG
+                ช่วยปรับปรุงการเข้าถึง (Accessibility)
+                ของเว็บไซต์ให้สอดคล้องกับมาตรฐาน WCAG
               </Typography>
               <Typography variant="body1" sx={{ color: "#ccc" }}>
                 ทำงานร่วมกับทีมแบ็คเอนด์เพื่อเชื่อมต่อ API
